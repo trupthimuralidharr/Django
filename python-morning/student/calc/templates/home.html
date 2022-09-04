@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Home page</h1>
+    <h2> NAME : {{name}}</h2>
+    <h3> AGE : {{age}}</h3>
+    <a href="login"> Login page link</a>
+    <br>
+    <br>
+    <br>
+    <form action="add" method="post">
+        {% csrf_token %}
+        <label> Enter the first number</label>
+        <input type="number" name="num1"> <br>
+        <label> Enter the second variable </label>
+        <input type="number" name="num2">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
